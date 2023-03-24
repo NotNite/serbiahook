@@ -1,0 +1,16 @@
+[package]
+name = "serbiahook"
+description = "cheat for a game that isn't out yet"
+authors = ["NotNite <hi@notnite.com>"]
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate_type = ["cdylib"]
+
+[dependencies]
+anyhow = "1.0.70"
+ctor = "0.1.20"
+skidscan = "2.0.1"
+windows = { version = "0.46.0", features = ["Win32_Foundation", "Win32_System_Console"] }
+retour = { git = "https://github.com/Hpmason/retour-rs.git" }
